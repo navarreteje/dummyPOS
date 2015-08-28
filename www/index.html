@@ -1,0 +1,106 @@
+﻿<html class="ui-mobile"><head><base href="http://demos.jquerymobile.com/1.4.2/navbar/">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+	<title>Navbar - jQuery Mobile Demos</title>
+	<link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="../css/themes/default/jquery.mobile-1.4.2.min.css">
+	<link rel="stylesheet" href="../_assets/css/jqm-demos.css">
+	<script src="../js/jquery.js"></script>
+	<script src="../_assets/js/index.js"></script>
+	<script src="../js/jquery.mobile-1.4.2.min.js"></script>
+	<style>
+		.nav-glyphish-example .ui-btn { padding-top: 40px !important; }
+		.nav-glyphish-example .ui-btn:after { width: 30px!important; height: 30px!important; margin-left: -15px !important; box-shadow: none!important; -moz-box-shadow: none!important; -webkit-box-shadow: none!important; -webkit-border-radius: 0 !important; border-radius: 0 !important; }
+		#chat:after { background:  url("../_assets/img/glyphish-icons/09-chat2.png") 50% 50% no-repeat; background-size: 24px 22px; }
+		#email:after { background:  url("../_assets/img/glyphish-icons/18-envelope.png") 50% 50% no-repeat; background-size: 24px 16px;  }
+		#login:after { background:  url("../_assets/img/glyphish-icons/30-key.png") 50% 50% no-repeat;  background-size: 12px 26px; }
+		#beer:after { background:  url("../_assets/img/glyphish-icons/88-beermug.png") 50% 50% no-repeat;  background-size: 22px 27px; }
+		#coffee:after { background:  url("../_assets/img/glyphish-icons/100-coffee.png") 50% 50% no-repeat;  background-size: 20px 24px; }
+		#skull:after { background:  url("../_assets/img/glyphish-icons/21-skull.png") 50% 50% no-repeat;  background-size: 22px 24px; }
+	</style>
+</head>
+<body class="ui-mobile-viewport ui-overlay-a" id="ui-page-top">
+<div data-role="page" class="jqm-demos ui-page ui-page-theme-a ui-page-footer-fixed ui-page-active" data-quicklinks="true" data-url="/1.4.2/navbar/" tabindex="0" style="padding-bottom: 62px; min-height: 541px;"><div data-role="panel" class="jqm-nav-panel jqm-quicklink-panel ui-panel ui-panel-position-right ui-panel-display-overlay ui-panel-closed ui-body-a ui-panel-animate" data-position="right" data-display="overlay" data-theme="a"><div class="ui-panel-inner" style="margin-top:0px;"><ul data-role="listview" data-inset="false" data-theme="a" data-divider-theme="a" data-icon="false" class="jqm-list ui-listview ui-group-theme-a"><li data-role="list-divider" role="heading" class="ui-li-divider ui-bar-a ui-first-child">Quick Links</li><li><a href="#Navbarbasics" class="ui-btn">Navbar basics</a></li><li><a href="#Multi-row" class="ui-btn">Multi-row</a></li><li><a href="#Navbarsinheaders" class="ui-btn">Navbars in headers</a></li><li><a href="#Navbarsinfooters" class="ui-btn">Navbars in footers</a></li><li><a href="#Persistent" class="ui-btn">Persistent</a></li><li><a href="#Icons" class="ui-btn">Icons</a></li><li><a href="#Iconposition" class="ui-btn">Icon position</a></li><li><a href="#3rdpartyiconsets" class="ui-btn">3rd party icon sets</a></li><li class="ui-last-child"><a href="#Themes" class="ui-btn">Themes</a></li></ul></div></div>
+
+	<div data-role="header" style="border-top:4px solid #00B1D9; " class="jqm-header ui-header ui-bar-inherit" role="banner">
+		<h3 class="ui-title" role="heading" aria-level="1"><a href="../" title="jQuery Mobile Demos home" class="ui-link"><img src="https://www.practisis.net/page/images/logo.png" alt="jQuery Mobile"></a></h3>
+		
+		<a href="#" class="jqm-navmenu-link ui-nodisc-icon ui-alt-icon ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all" data-role="button" role="button"> Menu</a>
+		
+	</div><!-- /header -->
+
+	
+	<div role="main" class="ui-content jqm-content">
+		<h1>Hello mindo</h1>
+	</div><!-- /content -->
+	    <div data-role="panel" class="jqm-navmenu-panel ui-panel ui-panel-position-left ui-panel-display-overlay ui-panel-closed ui-body-a ui-panel-animate" data-position="left" data-display="overlay" data-theme="a">
+	    	<div class="ui-panel-inner" style="margin-top:0px;"><ul class="jqm-list ui-alt-icon ui-nodisc-icon ui-listview">
+	<li data-filtertext="demos homepage" data-icon="home" class="ui-first-child">
+		<a href=".././" class="ui-btn ui-btn-icon-right ui-icon-home">Resumen</a>
+	</li>
+	
+	<li data-filtertext="demos homepage" data-icon="home" class="ui-first-child">
+		<a href=".././" class="ui-btn ui-btn-icon-right ui-icon-home">Ventas</a>
+	</li>
+	
+	<li data-filtertext="demos homepage" data-icon="home" class="ui-first-child">
+		<a href=".././" class="ui-btn ui-btn-icon-right ui-icon-home">Punto de Venta</a>
+	</li>
+	<li data-filtertext="demos homepage" data-icon="home" class="ui-first-child">
+		<a href=".././" class="ui-btn ui-btn-icon-right ui-icon-home">Historial</a>
+	</li>
+	<li data-filtertext="demos homepage" data-icon="home" class="ui-first-child">
+		<a href=".././" class="ui-btn ui-btn-icon-right ui-icon-home">Productos</a>
+	</li>
+	<li data-filtertext="demos homepage" data-icon="home" class="ui-first-child">
+		<a href=".././" class="ui-btn ui-btn-icon-right ui-icon-home">Lista de productos</a>
+	</li>
+	<li data-filtertext="demos homepage" data-icon="home" class="ui-first-child">
+		<a href=".././" class="ui-btn ui-btn-icon-right ui-icon-home">Nuevo Producto</a>
+	</li>
+	<li data-filtertext="demos homepage" data-icon="home" class="ui-first-child">
+		<a href=".././" class="ui-btn ui-btn-icon-right ui-icon-home">Inventario</a>
+	</li>
+	<li data-filtertext="demos homepage" data-icon="home" class="ui-first-child">
+		<a href=".././" class="ui-btn ui-btn-icon-right ui-icon-home">Clientes</a>
+	</li>
+	<li data-filtertext="demos homepage" data-icon="home" class="ui-first-child">
+		<a href=".././" class="ui-btn ui-btn-icon-right ui-icon-home">Nuevo Cliente</a>
+	</li>
+	<li data-filtertext="demos homepage" data-icon="home" class="ui-first-child">
+		<a href=".././" class="ui-btn ui-btn-icon-right ui-icon-home">Lista de clientes</a>
+	</li>
+	<li data-filtertext="demos homepage" data-icon="home" class="ui-first-child">
+		<a href=".././" class="ui-btn ui-btn-icon-right ui-icon-home">Sincronizar</a>
+	</li>
+	<li data-filtertext="demos homepage" data-icon="home" class="ui-first-child">
+		<a href=".././" class="ui-btn ui-btn-icon-right ui-icon-home">Cerrar Session</a>
+	</li>
+	
+
+<li data-filtertext="introduction overview getting started"><a href="../intro/" data-ajax="false" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Introduction</a></li>
+
+</div></li>
+
+
+
+
+
+
+
+
+		     </ul></div>
+		</div><!-- /panel -->
+
+
+
+	<!-- TODO: This should become an external panel so we can add input to markup (unique ID) -->
+    
+
+
+</div><!-- /page -->
+
+
+
+<div class="ui-loader ui-corner-all ui-body-a ui-loader-default"><span class="ui-icon-loading"></span><h1>loading</h1></div><div class="ui-panel-dismiss"></div><div class="ui-panel-dismiss"></div><div class="ui-panel-dismiss"></div></body></html>
